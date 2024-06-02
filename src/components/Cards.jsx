@@ -27,7 +27,7 @@ function Cards() {
           <img
             src="https://ochi.design/wp-content/uploads/2022/04/logo003.png"
             alt=""
-            className="w-6/12 md:w-4/12"
+            className="w-4/12 md:w-4/12"
           />
           <button className="px-3 md:px-5 py-2 md:py-3 rounded-full border-[1px] absolute left-5 md:left-10 bottom-5 md:bottom-10">
             BUSINESS BOOTCAMP ALUMNI

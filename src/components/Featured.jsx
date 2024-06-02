@@ -20,7 +20,9 @@ function Featured() {
       <div className="p-6 md:p-10  bg-white">
         <div className="cards w-full flex flex-col md:flex-row gap-10">
           <div className="w-full md:w-1/2">
-            <p className="text-lg md:text-xl mb-6 md:mb-10 text-black">FYDE</p>
+            <p className="text-3xl md:text-3xl mb-6 md:mb-10 font-semibold text-black">
+              FYDE
+            </p>
             <motion.div
               className="cardContainer relative w-full h-[50vh] md:h-[75vh]"
               onHoverStart={() => handleHover(0)}
@@ -57,7 +59,9 @@ function Featured() {
             </motion.div>
           </div>
           <div className="w-full md:w-1/2">
-            <p className="text-lg md:text-xl mb-6 md:mb-10 text-black">VISE</p>
+            <p className="text-3xl md:text-3xl mb-6 md:mb-10 font-semibold text-black">
+              VISE
+            </p>
             <motion.div
               className="cardContainer relative w-full h-[50vh] md:h-[75vh]"
               onHoverStart={() => handleHover(1)}

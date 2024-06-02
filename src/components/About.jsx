@@ -37,7 +37,7 @@ function About() {
       <div className="w-full flex flex-col md:flex-row gap-6 md:gap-10 border-t-[1px] border-[#a1b562] mt-10 md:mt-20 pt-10 md:pt-10 p-6 md:p-20">
         <div className="w-full md:w-1/2">
           <h1 className="text-5xl md:text-7xl mb-6 md:mb-10">Our approach:</h1>
-          <button className="px-6 md:px-10 uppercase py-4 md:py-6 bg-zinc-900 rounded-full text-white flex gap-6 md:gap-12 text-lg md:text-xl">
+          <button className="px-6 md:px-10 uppercase py-4 md:py-6 bg-zinc-900 rounded-full text-white flex gap-6 md:gap-12 text-lg md:text-xl ">
             Read More
             <div className="w-3 h-3 bg-zinc-100 rounded-full mt-1 md:mt-[5px]"></div>
           </button>
