@@ -12,7 +12,7 @@ import Footer from "./components/Footer";
 function App() {
   useEffect(() => {
     const scroll = new LocomotiveScroll({
-      el: document.querySelector("[data-scroll-container]"),
+      el: document.querySelector("data-scroll-section"),
       smooth: true,
       smartphone: {
         smooth: true,
