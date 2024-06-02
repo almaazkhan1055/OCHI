@@ -35,7 +35,7 @@ function LandingPage() {
           </div>
         ))}
       </div>
-      <div className="border-t-[1px] border-zinc-800 mt-32 flex justify-between items-center py-5 px-20 text-xl md:text-2xl md:flex-col md:items-center md:gap-5 md:px-10 md:py-10">
+      <div className="border-t-[1px] border-zinc-800 mt-32 flex justify-between items-center py-5 px-20 text-xl md:text-2xl md:flex md:items-center md:gap-5 md:px-10 md:py-10 ">
         {[
           "For public and private companies",
           "From the first pitch to IPO",
