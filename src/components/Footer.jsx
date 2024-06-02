@@ -1,21 +1,16 @@
 import React from "react";
 function Footer() {
   return (
-    <div className="flex flex-col md:flex-row gap-5 w-full bg-zinc-900 p-10 md:p-20 text-['Founders_Grotesk_X-Condensed']">
-      {" "}
+    <div className="flex flex-col md:flex-row gap-5 w-full bg-zinc-900 p-10 md:p-20 text-['Founders_Grotesk_X-Condensed'] mt-52">
       <div className="w-full md:w-1/2 flex flex-col justify-between h-auto md:h-screen">
-        {" "}
         <div className="heading">
-          {" "}
           <h1 className="text-6xl md:text-[8vw] uppercase leading-none mb-0 md:-mb-5 font-semibold">
-            {" "}
-            Eye{" "}
-          </h1>{" "}
+            Eye
+          </h1>
           <h1 className="text-6xl md:text-[8vw] uppercase leading-none mb-0 md:-mb-5 font-semibold">
-            {" "}
-            Opening{" "}
-          </h1>{" "}
-        </div>{" "}
+            Opening
+          </h1>
+        </div>
         <svg
           width="72"
           height="30"
@@ -44,33 +39,25 @@ function Footer() {
             fill="currentColor"
           ></path>
         </svg>
-        ;
-      </div>{" "}
+      </div>
       <div className="w-full md:w-1/2">
-        {" "}
         <h1 className="text-4xl md:text-[6vw] uppercase leading-none mb-0 md:-mb-5 font-semibold">
-          {" "}
-          Presentations{" "}
-        </h1>{" "}
+          Presentations
+        </h1>
         <div className="details font-['Neue_Montreal']">
-          {" "}
           <div className="S: mt-10 md:mt-20">
-            {" "}
-            <h1 className="text-xl md:text-2xl mb-5 md:mb-10">S:</h1>{" "}
+            <h1 className="text-xl md:text-2xl mb-5 md:mb-10">S:</h1>
             {["Instagram", "Behance", "Facebook", "Linkedin"].map(
               (item, index) => (
                 <a key={index} className="block text-xl md:text-2xl font-light">
-                  {" "}
-                  {item}{" "}
+                  {item}
                 </a>
               )
-            )}{" "}
-          </div>{" "}
+            )}
+          </div>
           <div className="lm flex flex-col md:flex-row justify-between items-start md:items-center mt-10 md:mt-20">
-            {" "}
             <div>
-              {" "}
-              <h1 className="text-xl md:text-2xl mb-5 md:mb-10">L:</h1>{" "}
+              <h1 className="text-xl md:text-2xl mb-5 md:mb-10">L:</h1>
               {[
                 "202-1965 W 4th Ave",
                 "Vancouver, Canada",
@@ -78,42 +65,36 @@ function Footer() {
                 "Lviv, Ukraine",
               ].map((item, index) => (
                 <a key={index} className="block text-xl md:text-2xl font-light">
-                  {" "}
-                  {item}{" "}
+                  {item}
                 </a>
-              ))}{" "}
-            </div>{" "}
+              ))}
+            </div>
             <div>
-              {" "}
-              <h1 className="text-xl md:text-2xl mb-5 md:mb-10">M:</h1>{" "}
+              <h1 className="text-xl md:text-2xl mb-5 md:mb-10">M:</h1>
               {["Home", "Services", "About us", "Insights", "Contact us"].map(
                 (item, index) => (
                   <a
                     key={index}
                     className="block text-xl md:text-2xl font-light"
                   >
-                    {" "}
-                    {item}{" "}
+                    {item}
                   </a>
                 )
-              )}{" "}
-            </div>{" "}
-          </div>{" "}
+              )}
+            </div>
+          </div>
           <div className="E: mt-10 md:mt-20 text-2xl">
-            {" "}
-            <h1 className="text-2xl">E:</h1>{" "}
+            <h1 className="text-2xl">E:</h1>
             <a href="" className="block text-white font-light">
-              {" "}
-              hello@ochi.design{" "}
-            </a>{" "}
-          </div>{" "}
+              hello@ochi.design
+            </a>
+          </div>
           <div className="flex justify-between mt-5 md:mt-10 text-xl md:text-2xl">
-            {" "}
-            <a href="">&copy; ochi design 2024. Legal Terms</a>{" "}
-            <a href="">Website by Obys</a>{" "}
-          </div>{" "}
-        </div>{" "}
-      </div>{" "}
+            <a href="">&copy; ochi design 2024. Legal Terms</a>
+            <a href="">Website by Obys</a>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

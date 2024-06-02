@@ -8,7 +8,7 @@ function LandingPage() {
       data-scroll
       data-scroll-section
       data-scroll-speed="-.3"
-      className="w-full h-screen bg-zinc-900 pt-1"
+      className="hero w-full md:h-auto h-screen bg-zinc-900 pt-1 "
     >
       <div className="textStructure mt-60 px-20">
         {["We Create", "Eye Opening", "Presentations"].map((item, index) => (
@@ -35,20 +35,17 @@ function LandingPage() {
           </div>
         ))}
       </div>
-      <div className="border-t-[1px] border-zinc-800 mt-32 flex justify-between items-center py-5 px-20 text-xl md:text-2xl md:flex md:items-center md:gap-5 md:px-10 md:py-10 ">
+      <div className="border-t-[1px] border-zinc-700 mt-32 flex justify-between items-center py-5 px-5 text-xl md:text-2xl md:flex-col md:items-center md:gap-5 md:px-10 md:py-10 gap-3">
         {[
           "For public and private companies",
           "From the first pitch to IPO",
         ].map((item, index) => (
-          <p
-            key={index}
-            className="font-light tracking-tight leading-none md:text-center"
-          >
+          <p key={index} className="tracking-tight leading-none md:text-center">
             {item}
           </p>
         ))}
         <div className="start flex items-center gap-5 md:flex-col md:items-center md:gap-3">
-          <div className="px-5 font-light py-2 rounded-full border-[1px] border-zinc-400">
+          <div className="px-5 py-2 rounded-full border-[1px] border-zinc-400">
             Start the project
           </div>
           <div className="w-10 h-10 border-[1px] border-zinc-400 rounded-full flex items-center justify-center md:mt-3">

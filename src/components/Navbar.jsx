@@ -34,7 +34,7 @@ function Navbar() {
             fill="currentColor"
           ></path>
         </svg>
-      </div>{" "}
+      </div>
       <div className="md:hidden">
         <button
           onClick={() => setIsOpen(!isOpen)}
@@ -45,30 +45,28 @@ function Navbar() {
           ) : (
             <MdClose className="text-[30px]" />
           )}
-        </button>{" "}
-      </div>{" "}
+        </button>
+      </div>
       <div
         className={`${
           isOpen ? "block" : "hidden"
         } absolute top-16 left-0 w-full bg-zinc-900 md:static md:flex md:gap-10 md:items-center md:w-auto`}
       >
-        {" "}
         <div className="links flex flex-col md:flex-row gap-4 md:gap-10 px-6 py-4 md:p-0">
-          {" "}
           {["Services", "Ourwork", "About Us", "Insights", "Contact Us"].map(
             (item, index) => (
               <a
                 key={index}
-                className={`text-3xl font-light  capitalize ${
+                className={`text-3xl font-light  capitalize mt-3 ${
                   index === 4 && "md:ml-32"
-                } ${index === 0 && "mt-10"}`}
+                }`}
               >
                 {item}
               </a>
             )
-          )}{" "}
-        </div>{" "}
-      </div>{" "}
+          )}
+        </div>
+      </div>
     </div>
   );
 }
