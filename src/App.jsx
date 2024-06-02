@@ -12,19 +12,22 @@ import Footer from "./components/Footer";
 function App() {
   useEffect(() => {
     const scroll = new LocomotiveScroll({
-      el: document.querySelector("data-scroll-section"),
+      el: document.querySelector("[data-scroll-container]"),
       smooth: true,
+      lerp: 0.03,
+      multiplier: 1.4,
+      reloadOnContextChange: true,
+      touchMultiplier: 2,
+      smoothMobile: 0,
       smartphone: {
-        smooth: true,
+        smooth: !0,
+        breakpoint: 767,
       },
       tablet: {
-        smooth: true,
+        smooth: !1,
+        breakpoint: 1024,
       },
     });
-
-    return () => {
-      scroll.destroy();
-    };
   }, []);
 
   return (

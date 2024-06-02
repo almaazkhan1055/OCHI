@@ -5,7 +5,7 @@ function Marquee() {
   return (
     <div
       data-scroll
-      data-scroll-section
+      data-scroll-container
       data-scroll-speed=".1"
       className="py-20 rounded-tr-3xl rounded-tl-3xl w-full bg-[#004d43] scroll"
     >
