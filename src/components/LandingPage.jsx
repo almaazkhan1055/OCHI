@@ -13,13 +13,13 @@ function LandingPage() {
       <div className="textStructure mt-60 px-20">
         {["We Create", "Eye Opening", "Presentations"].map((item, index) => (
           <div key={index} className="masker">
-            <div className="w-fit flex items-end overflow-hidden ">
+            <div className="w-fit flex items-end overflow-hidden">
               {index === 1 && (
                 <motion.div
                   initial={{ width: 0 }}
                   animate={{ width: "7vw" }}
                   transition={{ ease: [0.76, 0, 0.24, 1], duration: 1 }}
-                  className="w-[7vw] h-[4.5vw] relative -top-2  rounded-md"
+                  className="w-[7vw] h-[4.5vw] relative -top-2 rounded-md"
                 >
                   <img
                     className="h-[60px]"
@@ -35,20 +35,23 @@ function LandingPage() {
           </div>
         ))}
       </div>
-      <div className="border-t-[1px] border-zinc-800 mt-32 flex justify-between items-center py-5 px-20 text-xl">
+      <div className="border-t-[1px] border-zinc-800 mt-32 flex justify-between items-center py-5 px-20 text-xl md:text-2xl md:flex-col md:items-center md:gap-5 md:px-10 md:py-10">
         {[
           "For public and private companies",
           "From the first pitch to IPO",
         ].map((item, index) => (
-          <p key={index} className="font-light tracking-tight leading-none">
+          <p
+            key={index}
+            className="font-light tracking-tight leading-none md:text-center"
+          >
             {item}
           </p>
         ))}
-        <div className="start flex items-center gap-5">
+        <div className="start flex items-center gap-5 md:flex-col md:items-center md:gap-3">
           <div className="px-5 font-light py-2 rounded-full border-[1px] border-zinc-400">
             Start the project
           </div>
-          <div className="w-10 h-10 border-[1px] border-zinc-400 rounded-full flex items-center justify-center">
+          <div className="w-10 h-10 border-[1px] border-zinc-400 rounded-full flex items-center justify-center md:mt-3">
             <span className="rotate-[45deg]">
               <FaArrowUpLong />
             </span>

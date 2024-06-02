@@ -1,17 +1,21 @@
 import React from "react";
-
 function Footer() {
   return (
-    <div className="flex gap-5 w-full bg-zinc-900 p-20 text-['Founders_Grotesk_X-Condensed'] ">
-      <div className="w-1/2 h-screen flex flex-col justify-between">
+    <div className="flex flex-col md:flex-row gap-5 w-full bg-zinc-900 p-10 md:p-20 text-['Founders_Grotesk_X-Condensed']">
+      {" "}
+      <div className="w-full md:w-1/2 flex flex-col justify-between h-auto md:h-screen">
+        {" "}
         <div className="heading">
-          <h1 className="text-[8vw] uppercase leading-none -mb-5 font-semibold">
-            Eye
-          </h1>
-          <h1 className="text-[8vw] uppercase leading-none -mb-5 font-semibold">
-            Opening
-          </h1>
-        </div>
+          {" "}
+          <h1 className="text-6xl md:text-[8vw] uppercase leading-none mb-0 md:-mb-5 font-semibold">
+            {" "}
+            Eye{" "}
+          </h1>{" "}
+          <h1 className="text-6xl md:text-[8vw] uppercase leading-none mb-0 md:-mb-5 font-semibold">
+            {" "}
+            Opening{" "}
+          </h1>{" "}
+        </div>{" "}
         <svg
           width="72"
           height="30"
@@ -40,55 +44,77 @@ function Footer() {
             fill="currentColor"
           ></path>
         </svg>
-      </div>
-      <div className="w-1/2 ">
-        <h1 className="text-[6vw] uppercase leading-none -mb-5 font-semibold ">
-          Presentations
-        </h1>
-        <div className="details font-['Neue_Montreal'">
-          <div className="S: mt-20 ">
-            <h1 className="text-2xl mb-10">S:</h1>
+        ;
+      </div>{" "}
+      <div className="w-full md:w-1/2">
+        {" "}
+        <h1 className="text-4xl md:text-[6vw] uppercase leading-none mb-0 md:-mb-5 font-semibold">
+          {" "}
+          Presentations{" "}
+        </h1>{" "}
+        <div className="details font-['Neue_Montreal']">
+          {" "}
+          <div className="S: mt-10 md:mt-20">
+            {" "}
+            <h1 className="text-xl md:text-2xl mb-5 md:mb-10">S:</h1>{" "}
             {["Instagram", "Behance", "Facebook", "Linkedin"].map(
               (item, index) => (
-                <a className="block text-2xl font-light">{item}</a>
+                <a key={index} className="block text-xl md:text-2xl font-light">
+                  {" "}
+                  {item}{" "}
+                </a>
               )
-            )}
-          </div>
-          <div className="lm flex justify-between items-center mt-20 ">
+            )}{" "}
+          </div>{" "}
+          <div className="lm flex flex-col md:flex-row justify-between items-start md:items-center mt-10 md:mt-20">
+            {" "}
             <div>
-              <h1 className="text-2xl mb-10">L:</h1>
+              {" "}
+              <h1 className="text-xl md:text-2xl mb-5 md:mb-10">L:</h1>{" "}
               {[
                 "202-1965 W 4th Ave",
                 "Vancouver, Canada",
                 "30 Chukarina St",
                 "Lviv, Ukraine",
               ].map((item, index) => (
-                <a className="block text-2xl font-light">{item}</a>
-              ))}
-            </div>
+                <a key={index} className="block text-xl md:text-2xl font-light">
+                  {" "}
+                  {item}{" "}
+                </a>
+              ))}{" "}
+            </div>{" "}
             <div>
-              <h1 className="text-2xl mb-10">M:</h1>
+              {" "}
+              <h1 className="text-xl md:text-2xl mb-5 md:mb-10">M:</h1>{" "}
               {["Home", "Services", "About us", "Insights", "Contact us"].map(
                 (item, index) => (
-                  <a className="block text-2xl font-light">{item}</a>
+                  <a
+                    key={index}
+                    className="block text-xl md:text-2xl font-light"
+                  >
+                    {" "}
+                    {item}{" "}
+                  </a>
                 )
-              )}
-            </div>
-          </div>
-          <div className="E: mt-20 text-2xl">
-            <h1 className=" text-2xl">E:</h1>
-            <a href="" className="block text-white font-light text-2xl">
-              hello@ochi.design
-            </a>
-          </div>
-          <div className="flex justify-between mt-10 text-2xl">
-            <a href="">&copy; ochi design 2024. Legal Terms</a>
-            <a href="">Website by Obys</a>
-          </div>
-        </div>
-      </div>
+              )}{" "}
+            </div>{" "}
+          </div>{" "}
+          <div className="E: mt-10 md:mt-20 text-2xl">
+            {" "}
+            <h1 className="text-2xl">E:</h1>{" "}
+            <a href="" className="block text-white font-light">
+              {" "}
+              hello@ochi.design{" "}
+            </a>{" "}
+          </div>{" "}
+          <div className="flex justify-between mt-5 md:mt-10 text-xl md:text-2xl">
+            {" "}
+            <a href="">&copy; ochi design 2024. Legal Terms</a>{" "}
+            <a href="">Website by Obys</a>{" "}
+          </div>{" "}
+        </div>{" "}
+      </div>{" "}
     </div>
   );
 }
-
 export default Footer;
